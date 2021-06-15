@@ -1,2 +1,2 @@
 # Bubble game & Spellingbee 
-GOAL
+# GOAL
