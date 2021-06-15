@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>CIS1052 Yi Shiang Final Project</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jQueryMD5.js"></script>
+	<script src="js/responsivevoice.js"></script>
+	<script src="js/SpellingBee.js"></script> 
+	<script src="js/final.js"></script>
+	<script src="js/game.js"></script>
+	<link rel="stylesheet" href="css/lab6.css">
+	<script src="js/js.cookie.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	<a class="navbar-brand" href="#">Navbar</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<div id="paBtn" class="nav-link" href="#">Play All <span class="sr-only">(current)</span></div>
+				</li>
+					<li class="nav-item">
+					<span class="nav-link" id="BBtn">Browser</span>
+				</li>
+					<li class="nav-item">
+					<span class="nav-link" id="bbBtn">Bubble</span>
+				</li>
+					<li class="nav-item">
+					<span class="nav-link" id="sbBtn">Spell</span>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
+					<a class="dropdown-item" href="#">Profile</a>
+					<div id="logoutBtn" class="dropdown-item">Logout</div>
+				</div>
+				</li>
+				</ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	</form>
+	</div>
+	</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">陳宥翰</h1>
+      <img src="images/game.png" alt="Game image" style="width:300px;height:250px;>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+	
+	  <div id="bGame" class="col-md-4">
+        <h2>Browser</h2>
+		<button id="bBtn" type="button" class="btn btn-primary"> Detect </button>
+		<div id="bInfo" class="alert alert-info"></div>
+      </div>
+	  
+      <div id="bbGame" class="col-md-4">
+        <h2>Bubbles</h2>
+		<div id="pBtn" class="btn-primary btn-block">Play</div>
+		<div id="csBtn" class="btn-primary btn-block">Change Size</div>
+		<div id="ccBtn" class="btn-primary btn-block">Change Color</div>
+		<div id="PlayGround">
+			<div id="foo1" class="bubble"></div>
+			<div id="foo2" class="bubble"></div>
+			<div id="foo3" class="bubble"></div>
+			<div id="foo4" class="bubble"></div>
+			<div id="foo5" class="bubble"></div>
+			<div id="foo6" class="bubble"></div>
+			<div id="foo7" class="bubble"></div>
+			<div id="foo8" class="bubble"></div>
+			</div>
+      </div>
+	  
+      <div id="sbGame" class="col-md-4">
+        <h2>Spelling Bee</h2>
+		<div id="btnStart" class="btn btn-primary">Start</div>
+		<div id="btnListen" class="btn btn-primary">Listen</div>
+		<input id="Input" type="text" placeholder="Spell...">
+		<ul id="List" class="alert alert-info">
+		</ul>
+      </div>
+
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+  <p>&copy; Company 2021-2031</p>
+</footer>
+
+
+</body>
+</html>
