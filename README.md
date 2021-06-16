@@ -21,7 +21,7 @@ https://docs.google.com/presentation/d/17O7n3J4-ccaKUzgqrbj8Gkp78bb0B8_u8EfpEiuB
 
 
 # spelling bee
-main funtion 
+main code 
 SpellingBee.js
 responsivevoice.js .
 Audio source of each word is from  http://responsivevoice.org/license
