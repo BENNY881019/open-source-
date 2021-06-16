@@ -5,7 +5,10 @@
 
 
 # How to play
-#### bubble game
+#### bubble game 
+click all the bubble and you win
+#### spelling Bee 
+Spell out the words you hear
 
 # Web 
 file:///C:/Users/aa121/AppData/Local/Temp/Rar$EXa4604.46804/game.html#
