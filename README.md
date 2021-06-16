@@ -2,14 +2,12 @@
  We use css js HTML to make spelling bee game and bubble game.
  
 # user manual
-
-# How to play
+### How to play
 #### bubble game 
 click all the bubble and you win
 #### spelling Bee 
 Spell out the words you hear
-
-# Web 
+### Web 
 file:///C:/Users/aa121/AppData/Local/Temp/Rar$EXa4604.46804/game.html#
 
 
