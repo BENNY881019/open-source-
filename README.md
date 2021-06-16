@@ -1,6 +1,5 @@
 # Bubble game & Spelling Bee 
  We use css js HTML to make spelling bee game and bubble game.
- The structure of the website we use is Bootstrap.
  
 
 
