@@ -27,4 +27,4 @@ Audio source of each word is from  http://responsivevoice.org/license
 
 
 # Bubble game
-main code game.js game.html 
+main code jumbotron.css lab6.css signin.css
