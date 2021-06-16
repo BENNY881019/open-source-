@@ -5,7 +5,7 @@
 
 
 # How to play
-## bubble game
+#### bubble game
 
 # Web 
 file:///C:/Users/aa121/AppData/Local/Temp/Rar$EXa4604.46804/game.html#
