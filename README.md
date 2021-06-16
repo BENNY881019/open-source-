@@ -1,7 +1,7 @@
 # Bubble game & Spelling Bee 
  We use css js HTML to make spelling bee game and bubble game.
  
-
+# user manual
 
 # How to play
 #### bubble game 
