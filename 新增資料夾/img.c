@@ -1,5 +1,7 @@
 #include "img.h"
+#include <stdio>
 #include <stdlib.h>
+#include <webp/encode.h>
 
 MyImage *createMyimage(int width, int height){
 	MyImage *img;
@@ -31,4 +33,31 @@ void setPixel(MyImage *img, int x, int y,
    pixel[0];
    pixel[1];
    pixel[2];   
+}
+void saveImage(MyImage *img, char *filename) {
+	int filesize;
+	unsigned char *compressed_data;
+	FILE *webp_file;
+	
+	filesize = WebPEncodeRGB(img->data,
+	                         img->width, img->height, img->width,
+							 95,
+							 &compressed_data);
+	
+	webp_file = fopen(filename, "wb");
+	fwrite(compressed_data, sizeof(unsigned char), filesize, webp_file);
+	fclose(webp_file);
+							 
+	WebPFree(compressed_data);
+}
+
+void fillColor(MyImage *img,
+               unsigned char r, unsigned char g,unsigned char b) {
+	int x, y;
+	
+	for (y=0; y<img->height; y++) {
+		for (x=0; x<img->width; x++) {
+			setPixel(img, x, y, r, g, b);
+		}
+	}
 }
