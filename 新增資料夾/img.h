@@ -4,12 +4,17 @@
 typedef struct _MyImage {
 	int width;
 	int height;
-    unsigned char *data;
-}MyImage;
+	unsigned char *data;
+} MyImage;
 
 MyImage *createMyImage(int width, int height);
 void freeMyImage(MyImage *img);
 unsigned char *getPixel(MyImage *img, int x, int y);
-void setPixel(MyImage *img, int x, int y,unsigned char r,unsigned char g,unsigned b);
+void setPixel(MyImage *img, int x, int y,
+              unsigned char r, unsigned char g, unsigned char b);
+void saveImage(MyImage *img, char *filename);
 
-#endif	
+void fillColor(MyImage *img,
+               unsigned char r, unsigned char g,unsigned char b);
+
+#endif
