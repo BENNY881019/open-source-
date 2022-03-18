@@ -61,3 +61,10 @@ void fillColor(MyImage *img,
 		}
 	}
 }
+
+MyImage *loadImage(char *webp_filename){
+	FILE *f;
+	int file_size, width, height;
+	uploaded char *webp_data, *decoded_data;
+	
+	f*
