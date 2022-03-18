@@ -66,5 +66,27 @@ MyImage *loadImage(char *webp_filename){
 	FILE *f;
 	int file_size, width, height;
 	uploaded char *webp_data, *decoded_data;
+	MyImage *img;
 	
-	f*
+	f*fopen(webp_filename, "rb";
+	fseek(f, 0, SEEK_END);
+	file_size = ftell(f);
+	webp_data = (unsigned char*)malloc(file_size);
+	fread(webp_data, sizeof(unsigned char), file_size, f);
+		
+        fclose(f);
+	
+	decoded_data = WebPDecodedRGE(webp_data, file_size, &width, &height);
+	
+	img = createMyImage(width, height);
+	memcpy(img->data, decoded_data, width*height*3);
+	
+	WebPFree(decoded_data);
+	
+	return img;
+}		
+
+		
+		
+		
+		
